@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "TouchGrass",
+    "slug": "touchgrass",
+    "scheme": "touchgrass",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-router",
+      "expo-web-browser",
+      ["expo-calendar", {
+        "calendarPermission": "TouchGrass reads calendar busy times only when you connect your calendar. Event details stay on your device."
+      }],
+      ["expo-image-picker", {
+        "photosPermission": "Choose an optional quest photo to share privately with hangout members.",
+        "cameraPermission": "Take an optional quest photo to share privately with hangout members.",
+        "microphonePermission": false
+      }],
+      "expo-notifications"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.touchgrass.app"
+    },
+    "android": {
+      "package": "com.touchgrass.app"
+    }
+  }
+}
